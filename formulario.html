@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Escríbeme — Evelyn Rosas</title>
+<meta name="description" content="Cuéntame sobre tu marca: qué haces, qué sueñas para ella y qué te está frenando.">
+<meta property="og:title" content="Escríbeme — Evelyn Rosas">
+<meta property="og:description" content="Cuéntame sobre tu marca: qué haces, qué sueñas para ella y qué te está frenando.">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="hdr"><div class="l"><a href="index.html" class="wm">Evelyn Rosas</a><div class="tag">Brand Consultant</div></div>
+<div class="r"><a href="contacto.html#reservar" class="cta">Reserva tu Brand Therapy Call&nbsp;<span class="lnk">→</span>&nbsp;<span class="dot"></span></a><button type="button" class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"></button></div></header>
+<nav class="menu" id="menu" hidden><a href="index.html">Inicio<span>01</span></a><a href="sobre-mi.html">Sobre mí<span>02</span></a><a href="trabajo.html">Trabajo<span>03</span></a><a href="contacto.html" aria-current="page">Contacto<span>04</span></a></nav>
+<main>
+<section class="sec" style="padding-top:60px;padding-bottom:70px">
+<div class="label">(Enviar un mensaje)</div>
+<h1 class="serif-xl" style="margin-top:30px;font-size:130px">Cuéntame sobre <i>tu marca</i>.</h1>
+<p class="serif" style="font-size:34px;line-height:1.2;margin-top:28px;max-width:900px">Cuéntame qué haces, qué sueñas para tu marca y qué te está frenando.</p></section>
+
+<section style="position:relative;overflow:hidden;border-top:1px solid var(--tinta);background:var(--rosa)">
+<div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none">
+<div style="position:absolute;left:-12%;top:-18%;width:72%;height:62%;border-radius:50%;background:var(--coral);filter:blur(80px);opacity:.95"></div>
+<div style="position:absolute;right:4%;top:2%;width:30%;height:30%;border-radius:50%;background:var(--lima);filter:blur(90px);opacity:.6"></div>
+<div style="position:absolute;left:26%;top:36%;width:44%;height:26%;border-radius:50%;background:var(--crema);filter:blur(70px);opacity:.85"></div>
+<div style="position:absolute;right:-14%;bottom:-22%;width:62%;height:62%;border-radius:50%;background:var(--marino);filter:blur(100px);opacity:.6"></div>
+<div style="position:absolute;left:-10%;bottom:-12%;width:42%;height:40%;border-radius:50%;background:var(--coral);filter:blur(90px);opacity:.85"></div>
+<svg style="position:absolute;inset:0;width:100%;height:100%;mix-blend-mode:soft-light;opacity:.9"><filter id="grano"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grano)"/></svg>
+</div>
+<div class="sec" style="position:relative;padding-top:80px;padding-bottom:120px"><div class="row" style="row-gap:48px">
+
+<div style="grid-column:1/5">
+<div class="label">(Prefiero escribir directo)</div>
+<a href="mailto:hello@evelynrosas.me" class="serif" style="display:block;font-size:34px;line-height:1.2;margin-top:28px">hello@evelynrosas.me</a>
+<div style="margin-top:20px"><a href="https://www.instagram.com/" target="_blank" rel="noopener" class="lnk">Instagram</a></div>
+<div style="border-top:1px solid var(--tinta);margin-top:56px;padding-top:24px">
+<div class="label">(¿Prefieres hablar?)</div>
+<p class="serif" style="font-size:30px;line-height:1.2;margin-top:20px">Reserva una Brand Therapy Call y sal con una dirección clara.</p>
+<div style="margin-top:28px"><a href="contacto.html#reservar" class="pill fill">Reserva tu Brand Therapy Call <svg viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><path d="M0 5h12M8 1l4 4-4 4"/></svg></a></div></div>
+</div>
+
+<!-- Para recibir los mensajes sin que se abra el correo de quien escribe,
+     pon aquí la URL de Formspree (o similar): data-endpoint="https://formspree.io/f/XXXXXXX" -->
+<form id="contacto-form" data-endpoint="" style="grid-column:6/13;background:rgba(255,252,238,.72);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border:1px solid var(--tinta);border-radius:28px;padding:16px 48px 56px">
+<label class="fld" style="margin-top:0"><span class="label">Tu nombre</span><input type="text" name="nombre" placeholder="Nombre y apellido" required autocomplete="name"></label>
+<label class="fld"><span class="label">Tu correo</span><input type="email" name="email" placeholder="nombre@correo.com" required autocomplete="email"></label>
+<label class="fld"><span class="label">Nombre de tu marca o negocio</span><input type="text" name="marca" placeholder="Cómo se llama tu proyecto"></label>
+<label class="fld"><span class="label">Instagram o sitio web (opcional)</span><input type="text" name="enlace" placeholder="@tumarca o www.tumarca.com"></label>
+
+<fieldset style="border:0;margin-top:44px;min-width:0">
+<legend class="label" style="padding:0">Tipo de negocio</legend>
+<div class="chips">
+<label class="chip"><input type="radio" name="tipo" value="Restaurante">Restaurante</label>
+<label class="chip"><input type="radio" name="tipo" value="Cafetería / Pastelería">Cafetería / Pastelería</label>
+<label class="chip"><input type="radio" name="tipo" value="Marca de producto">Marca de producto</label>
+<label class="chip"><input type="radio" name="tipo" value="Marca personal">Marca personal</label>
+<label class="chip"><input type="radio" name="tipo" value="Otro">Otro</label></div></fieldset>
+
+<fieldset style="border:0;margin-top:44px;min-width:0">
+<legend class="label" style="padding:0">¿Qué te interesa?</legend>
+<div class="chips">
+<label class="chip y"><input type="checkbox" name="interes" value="Brand Therapy Call"><b>Brand Therapy Call</b></label>
+<label class="chip"><input type="checkbox" name="interes" value="Brand Reset">Brand Reset</label>
+<label class="chip"><input type="checkbox" name="interes" value="Brand Accelerator">Brand Accelerator</label>
+<label class="chip"><input type="checkbox" name="interes" value="Brand Design & Applications">Brand Design &amp; Applications</label>
+<label class="chip"><input type="checkbox" name="interes" value="IG Brand Kit">IG Brand Kit</label>
+<label class="chip"><input type="checkbox" name="interes" value="Aún no lo sé">Aún no lo sé</label></div></fieldset>
+
+<label class="fld" style="margin-top:44px"><span class="label">Cuéntame más</span><textarea name="mensaje" placeholder="¿Qué quieres lograr con tu marca? ¿Dónde sientes que estás atascada o atascado?"></textarea></label>
+
+<div style="margin-top:48px"><button type="submit" class="pill fill">Enviar mensaje <svg viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><path d="M0 5h12M8 1l4 4-4 4"/></svg></button></div>
+<p class="form-ok" role="status" hidden></p>
+</form>
+
+</div></div></section>
+
+</main>
+<footer class="ftr">
+<h2>Todo lo bueno que ya haces, pero&nbsp;<i>bien contado</i>.</h2>
+<a href="contacto.html#reservar" class="pill fill">Reserva tu Brand Therapy Call <svg viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><path d="M0 5h12M8 1l4 4-4 4"/></svg></a>
+<div class="badge" aria-hidden="true"><div class="c"></div>
+<svg viewBox="0 0 236 236"><defs><path id="cp" d="M118,118 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/></defs>
+<text font-family="Hanken Grotesk, sans-serif" font-size="15" fill="#171615"><textPath href="#cp" startOffset="0" textLength="546" lengthAdjust="spacing">HABLEMOS DE TU MARCA · HABLEMOS DE TU MARCA ·</textPath></text></svg></div>
+<div class="name">Evelyn Rosas</div>
+<div class="frow"><a href="mailto:hello@evelynrosas.me">hello<span class="cir">@</span>evelynrosas.me</a><div><span class="cir">·</span><a href="formulario.html"><u>Escríbeme</u></a>, estoy recibiendo proyectos.</div><div>Sígueme en <a href="https://www.instagram.com/" target="_blank" rel="noopener"><u>Instagram</u></a></div><div><a href="contacto.html#faq"><u>FAQ</u></a></div><div>© Evelyn Rosas • <span id="year">2026</span></div></div>
+</footer>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
